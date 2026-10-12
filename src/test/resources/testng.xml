@@ -14,7 +14,7 @@
             </run>
         </groups>
         <classes>
-<!--            <class name="tests.LandingPage"></class>-->
+            <class name="tests.VerifyLandingPage"></class>
         </classes>
     </test>
 

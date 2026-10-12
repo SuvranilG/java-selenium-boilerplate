@@ -26,4 +26,9 @@ test {
         // Specify the relative path to your testng.xml file
         suites 'src/test/resources/testng.xml'
     }
+
+    // Prints test execution details in the console terminal
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
 }
