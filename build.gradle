@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.Demo2'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // Selenium dependency
+    implementation 'org.seleniumhq.selenium:selenium-java:4.18.1'
+    // Add TestNG dependency
+    implementation 'org.testng:testng:7.9.0'
+}
+
+test {
+//    useJUnitPlatform()
+    useTestNG() {
+        // Specify the relative path to your testng.xml file
+        suites 'src/test/resources/testng.xml'
+    }
+}
