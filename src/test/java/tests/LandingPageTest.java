@@ -4,7 +4,7 @@ import org.Demo2.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class VerifyLandingPage extends BaseTest {
+public class LandingPageTest extends BaseTest {
 
     @Test
     public void verifyLandingPage(){
